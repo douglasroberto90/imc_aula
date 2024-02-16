@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class homePage extends StatefulWidget {
-  const homePage({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<homePage> createState() => _homePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _homePageState extends State<homePage> {
+class _HomePageState extends State<HomePage> {
   TextEditingController controllerPeso = TextEditingController();
   TextEditingController controllerAltura = TextEditingController();
 
@@ -50,7 +50,7 @@ class _homePageState extends State<homePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text(
+          title: const Text(
             "Calculadora de IMC",
             style: TextStyle(
               color: Colors.white,
@@ -60,7 +60,7 @@ class _homePageState extends State<homePage> {
           backgroundColor: Colors.red,
           actions: <Widget>[
             IconButton(
-              icon: Icon(Icons.refresh_sharp),
+              icon: const Icon(Icons.refresh_sharp),
               onPressed: _resetarCampos,
             ),
           ]),
@@ -71,13 +71,13 @@ class _homePageState extends State<homePage> {
             padding: const EdgeInsets.only(left: 10.0, right: 10.0),
             child: Column(
               children: [
-                Icon(
+                const Icon(
                   Icons.person_outline,
                   size: 150,
                 ),
                 TextFormField(
                   keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                       labelText: "Peso (kg)",
                       labelStyle: TextStyle(
                         color: Colors.red,
@@ -92,7 +92,7 @@ class _homePageState extends State<homePage> {
                 ),
                 TextFormField(
                     keyboardType: TextInputType.number,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         labelText: "Altura (cm)",
                         labelStyle: TextStyle(
                           color: Colors.red,
@@ -119,7 +119,7 @@ class _homePageState extends State<homePage> {
                           backgroundColor: Colors.red,
 
                         ),
-                        child: Text(
+                        child: const Text(
                           "Calcular",
                           style: TextStyle(
                             color: Colors.white,
@@ -130,7 +130,7 @@ class _homePageState extends State<homePage> {
                 ),
                 Text(
                   _informacoes,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.red,
                     fontSize: 20.0,
                   ),

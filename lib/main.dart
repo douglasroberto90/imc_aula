@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Calculadora de IMC',
       debugShowCheckedModeBanner: false,
-      home: const homePage(),
+      home: const HomePage(),
     );
   }
 }
