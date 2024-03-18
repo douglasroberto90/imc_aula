@@ -1,6 +1,6 @@
 # imc_aula
-
-A new Flutter project.
+Projeto de revisão usando um stateful Widget.
+Neste projeto após inserir os dados de altura e peso o programa calcula o IMC do usuário e exibe uma classificação de acordo com o valor obtido.
 
 ## Getting Started
 
